@@ -54,7 +54,7 @@ public class EqualityOpe
         System.out.println("toString: " + b_obj1.toString());
         System.out.println("valueOf: " + Boolean.valueOf(b_obj1));
         System.out.println("compare: " + Boolean.compare(b_obj1, b_obj2));
-        System.out.println("parse: " + Boolean.parseBoolean("true"));
+        System.out.println("parse: " + Boolean.parseBoolean("false"));
 
 
 

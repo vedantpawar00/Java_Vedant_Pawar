@@ -1,0 +1,98 @@
+**Loops: It is feature that facilitates execution of set of instructions, functions repeatedly on given condition.
+
+1. While Loop
+The Java while loop is used to iterate a part of the program repeatedly until the specified Boolean condition is true. 
+As soon as the Boolean condition becomes false, the loop automatically stops.
+*Syntax:
+while (condition){    
+//code to be executed   
+I ncrement / decrement statement  
+}    
+*Eg:
+public class WhileExample {  
+public static void main(String[] args) {  
+    int i=1;  
+    while(i<=10){  
+        System.out.println(i);  
+    i++;  
+    }  
+}  
+}  
+
+
+2. Do While loop
+The Java do-while loop is used to iterate a part of the program repeatedly, until the specified condition is true. 
+If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use a do-while loop.
+*Syntax:
+do{    
+//code to be executed / loop body  
+//update statement   
+}while (condition);    
+*Eg:
+public class DoWhileExample {    
+public static void main(String[] args) {    
+    int i=1;    
+    do{    
+        System.out.println(i);    
+    i++;    
+    }while(i<=10);    
+}    
+}    
+
+
+3. For loop
+Used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.
+*Syntax:
+for(initialization; condition; increment/decrement)
+{    
+    //statement or code to be executed    
+}   
+*Eg:
+//Java Program to demonstrate the example of for loop, which prints table of 1  
+public class ForExample {  
+public static void main(String[] args) {  
+    //Code of Java for loop  
+    for(int i=1;i<=10;i++){  
+        System.out.println(i);  
+    }  
+}  
+}  
+
+
+4.Nested For loop
+If we have a for loop inside the another loop, it is known as nested for loop. 
+The inner loop executes completely whenever outer loop executes.
+*Eg.
+public class NestedForExample {  
+public static void main(String[] args) {  
+    //loop of i  
+    for(int i=1;i<=3;i++){  
+        //loop of j  
+        for(int j=1;j<=3;j++){  
+            System.out.println(i+" "+j);  
+        }//end of i  
+    }//end of j  
+}  
+}  
+
+
+5. For Each loop
+The for-each loop is used to traverse array or collection in Java. 
+It is easier to use than simple for loop because we don't need to increment value and use subscript notation.
+*Syntax
+for(data_type variable : array_name){    
+    //code to be executed    
+}   
+*Eg.
+public class ForEachExample {  
+public static void main(String[] args) {  
+    //Declaring an array  
+    int arr[]={12,23,44,56,78};  
+    //Printing array using for-each loop  
+    for(int i:arr){  
+        System.out.println(i);  
+    }  
+}  
+}  
+
+
