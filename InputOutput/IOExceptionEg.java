@@ -1,0 +1,24 @@
+import java.io.FileReader;
+import java.io.IOException;
+
+public class IOExceptionEg 
+{
+    public static void main(String[] args) 
+    {
+        String path = "/a/b/c/input.txt";
+        try 
+        {
+            FileReader reader = new FileReader(path);  
+            while (reader.ready()) 
+            {    
+                System.out.print((char) reader.read());    
+            }    
+            reader.close();
+        } 
+        catch (IOException e) 
+        {
+            System.out.println("There has been an IO exception!");
+            System.out.println(e);
+        }
+    }
+}
